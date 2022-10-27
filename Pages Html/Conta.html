@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartSom</title>
+    <link rel="stylesheet" href="/css/conta.css">
+</head>
+
+<body onload="usuarios()">
+    <!-------------------------------------------------Header------------------------------------------------->
+    <header>
+        <section class="banner">
+            <div class="titulo">
+                <h2>
+                    StartSom
+                </h2>
+            </div>
+            <h3>
+                Aprenda a tocar violao
+            </h3>
+            <h1>
+                StartSom
+            </h1>
+            <!-------------------------------------------------Menu------------------------------------------------->
+            <nav>
+                <label for="checkbox">
+                    <img src="/Imagens/arrow.ico" alt="">
+
+                </label>
+
+                <input type="checkbox" name="checkbox" id="checkbox">
+
+
+                <div id="menu">
+                    <ul>
+
+                        <li> <a href="Conta.html"><img
+                                    src="/Imagens/4213460-account-avatar-head-person-profile-user_115386.ico" alt="">
+                        </li></a>
+
+                        <li><a href="home.html"><img
+                                    src="/Imagens/3643769-building-home-house-main-menu-start_113416.ico" alt=""></a>
+                        </li>
+                        <li><a href="Compra.html"><img class="Compra"
+                                    src="/Imagens/Musical-Vector-Acoustic-Guitar-PNG.png" alt=""></a></li>
+                        <li> <a href="aprender.html"><img src="/Imagens/guitar-pick_icon-icons.com_60121 (1).ico"
+                                    alt=""></a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <section>
+        <!----------------------------------- Perfil ---------------------------------->
+        <div class="PerfilC">
+            <img src="/Imagens/png-transparent-computer-icons-user-profile-avatar-avatar-face-heroes-silhouette-removebg-preview.png"
+                alt="">
+            <h2 id="nome1">'name'</h2>
+            <button class="sairUser" onclick="SairUserLogin()">Sair</button>
+            <button id="loginUser" onclick="loginUser()">login</button>
+
+
+        </div>
+        <hr>
+    </section>
+    <article>
+        <div class="informaçao">
+            <h3>Nome</h3>
+            <P id="nome">'name'</P>
+            <h3>Email</h3>
+            <p id="email">'email'</p>
+            <h3>Sobre mim:</h3>
+            <textarea class="sobreMim"></textarea> <br>
+        </div>
+        <hr>
+        <!----------------------------------- Lista de atividades ---------------------------------->
+        <h1 style="text-align: center; padding: 25px 0 0 0;;">Lista de atividades para voce organizar o que vai fazer
+        </h1>
+        <div class="container">
+
+            <div class="lista">
+
+                <h1>Lista de tarefas</h1>
+                <input type="text" id="text">
+                <button type="submit" onclick="adicionar()"><img src="/Imagens/+.png" alt=""></button>
+
+                <ul id="list">
+
+                </ul>
+
+            </div>
+        </div>
+        <!----------------------------------- footer ---------------------------------->
+        <footer class="midia">
+            <p style="color: rgb(0, 0, 0); text-align: center;"> Copyright - StartSom | Todos os direitos reservados |
+                Desenvolvido por Davi Morais</p>
+        </footer>
+    </article>
+    <script src="/Js/conta.js"></script>
+</body>
+
+</html>

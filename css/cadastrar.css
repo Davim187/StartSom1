@@ -1,0 +1,205 @@
+::-webkit-scrollbar {
+    background-color: #a33e0f27;
+    border-radius: 20px;
+    color: black;
+ }
+ ::-webkit-scrollbar-thumb{
+     background-color: #9b47209f;
+     border-radius: 20px
+ }
+
+/********************************************* Cadrastar *******************************************/
+
+body {
+
+    margin: 20px;
+    background: linear-gradient(#a33e0f65 100%, #db77134f 20%),
+        url(/Imagens/R.jfif)no-repeat fixed center;
+    background-size: 100% 100%;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+section {
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.cadastrar {
+    max-width: 100%;
+    max-height: 30%;
+    border: 2px white solid;
+    background-color: #ffdcb880;
+    border-radius: 20px;
+    position: relative;
+    padding: 0px 70px;
+}
+
+.card {
+    color: black;
+    padding: 40px;
+    border-radius: 2px;
+    width: 280px;
+}
+
+.card-header {
+    padding-bottom: 50px;
+    opacity: 0.8;
+    color: #fff;
+    color: black;
+    text-align: center;
+}
+
+.card-header::after {
+    content: "";
+    width: 134px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    margin-top: -17px;
+    margin-left: -5px;
+    position: relative;
+    left: 16%;
+}
+
+.card-content label {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.card-content-area {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.card-content-area input {
+    margin-top: 10px;
+    padding: 0 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    color: rgb(0, 0, 0);
+}
+
+.card-footer .submit {
+    width: 100%;
+    height: 40px;
+    background-color: #db77138c;
+    border: none;
+    color: #000000;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.card-footer .login {
+    width: 100%;
+    height: 40px;
+    background-color: #db7713;
+    border: none;
+    color: #000000;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+a:visited {
+    color: black;
+}
+.card-content .sucesso input {
+    margin-top: 10px;
+    padding: 0 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid green;
+    outline: none;
+    color: rgb(0, 0, 0);
+}
+
+.error {
+  display: flex; 
+
+}
+
+/********************************************* responsivo ********************************************/
+
+@media screen and (max-width: 540px) {
+    .login {
+        width: 10px;
+        height: 10px;
+    }
+
+    .cadastrar {
+        padding: 40px;
+    }
+}
+@media (max-width: 1150px) {
+    #menu ul li {
+        background-color: aliceblue;
+        margin: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border-color: transparent;
+        padding: 10px;
+        overflow-y: hidden;
+    }
+
+    #menu {
+        position: relative;
+        left: 94%;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: 2px solid rgb(255, 255, 255);
+        width: 60px;
+        border-radius: 40px;
+
+    }
+
+    #menu img {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 20px;
+        height: 20px;
+
+    }
+
+    input[type="checkbox"] {
+        display: none;
+
+    }
+
+    input[type="checkbox"]:checked+div {
+        display: none;
+
+    }
+
+    nav {
+        height: 100%;
+        padding: 80px 50px 0 50px;
+        position: relative;
+        bottom: 330px;
+    }
+
+    nav label img {
+        position: relative;
+        left: 95%;
+        width: 40px;
+        bottom: 20px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        transition: transform .35s;
+    }
+    
+
+    nav label img:hover {
+        transform: translate(1.15);
+    }
+}

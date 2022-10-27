@@ -1,0 +1,212 @@
+::-webkit-scrollbar {
+    background-color: #a33e0f27;
+    border-radius: 20px;
+    color: black;
+ }
+ ::-webkit-scrollbar-thumb{
+     background-color: #9b47209f;
+     border-radius: 20px
+ }
+/********************************************* Login ********************************************/
+
+body {
+
+    margin: 120px;
+    background: linear-gradient(#a33e0f65 100%, #db77134f 20%),
+        url(/Imagens/R.jfif)no-repeat fixed center;
+    overflow-y: hidden;
+    background-size: 100% 100%;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    max-width: 200%;
+    max-height: 200%;
+    border: 2px white solid;
+    background-color: #ffdcb880;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 120%;
+}
+
+.card-header {
+    padding-bottom: 50px;
+    opacity: 0.8;
+    color: #fff;
+    color: black;
+}
+
+.card-header::after {
+    content: "";
+    width: 70px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    margin-top: -17px;
+    margin-left: -5px;
+}
+
+.card-content label {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.card-content-area {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.card-content-area input {
+    margin-top: 10px;
+    padding: 0 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    color: rgb(0, 0, 0);
+}
+
+.card-footer .submit {
+    width: 100%;
+    height: 40px;
+    background-color: #db771362;
+    border: none;
+    color: #000000;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+a:visited {
+    color: #000000;
+}
+.erro{
+    background-color: rgba(255, 0, 0, 0.384);
+    border-radius: 20px;
+    text-align: center;
+    height: 30px;
+    line-height: 0px;
+    margin: 5px;
+    border: 1px solid red;
+    display: none;
+}
+.card-content .sucesso input {
+    margin-top: 10px;
+    padding: 0 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid green;
+    outline: none;
+    color: rgb(0, 0, 0);
+}
+
+.card-content .error input {
+    margin-top: 10px;
+    padding: 0 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ff0000;
+    outline: none;
+    color: rgb(0, 0, 0);
+}
+
+#erro{
+    background-color: #ff000094;
+    color: #fafafa;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid red;
+    display: none;
+}
+/********************************************* responsivo ********************************************/
+@media screen and (max-width: 280px) {
+    .login {
+        max-width: 300%;
+        max-height: 300%;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    #menu ul li {
+        background-color: aliceblue;
+        margin: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border-color: transparent;
+        padding: 10px;
+        overflow-y: hidden;
+    }
+
+    #menu {
+        position: relative;
+        left: 94%;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: 2px solid rgb(255, 255, 255);
+        width: 60px;
+        border-radius: 40px;
+
+    }
+
+    #menu img {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 20px;
+        height: 20px;
+
+    }
+
+    input[type="checkbox"] {
+        display: none;
+
+    }
+
+    input[type="checkbox"]:checked+div {
+        display: none;
+
+    }
+
+    nav {
+        height: 100%;
+        padding: 80px 50px 0 50px;
+        position: relative;
+        bottom: 330px;
+    }
+
+    nav label img {
+        position: relative;
+        left: 95%;
+        width: 40px;
+        bottom: 20px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        transition: transform .35s;
+    }
+    
+
+    nav label img:hover {
+        transform: translate(1.15);
+    }
+}
